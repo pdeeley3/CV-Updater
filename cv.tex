@@ -1,0 +1,88 @@
+\documentclass[paper=a4,fontsize=11pt]{scrartcl}
+							
+\usepackage[english]{babel}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[svgnames]{xcolor}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{kpfonts}
+\usepackage[colorlinks=true,urlcolor=purple]{hyperref}
+\usepackage{sectsty}
+
+\frenchspacing
+\pagestyle{empty}
+\sectionfont{
+	\usefont{OT1}{phv}{b}{n}
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}
+}
+
+\newcommand{\bulletpoint}{
+{\large $\triangleright$}
+}
+
+\newcommand{\sepspace}{\vspace*{0.3em}}
+
+\newcommand{\MyName}[1]{
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\PersonalInfo}[5]{
+        \Huge \usefont{OT1}{phv}{m}{n} \textbf{#1} 
+        \large \usefont{OT1}{phv}{m}{n} \hfill #2\hspace{10pt}#3\hspace{10pt}#4
+}
+
+
+\newcommand{\NewPart}[1]{%
+  \vspace{-0.6em}%
+  \section*{\uppercase{#1}}%
+  \vspace{-0.4em}%
+}
+
+\begin{document}
+
+\PersonalInfo{Phillip Deeley}
+{phillipdeeley@gmail.com}
+{\href{https://www.phillipdeeley.com}{My Website}}
+{\href{https://www.linkedin.com/in/phillip-deeley/}{LinkedIn}}
+{\href{https://github.com/pdeeley3}{GitHub}}
+{\href{https://google.com}{Medium}}
+\sepspace
+
+\Text \textcolor{red} {{Add unique to each application - personal paragraph}}
+
+
+\NewPart{Work \& Experience}
+\begin{itemize}
+    \item[\bulletpoint] Full-time summers 2024 to present: Sailing tuition at Wildwind Sailing Holidays, Greece, working sixty hour weeks as part of a large team, including performing safety responsibilities for hundreds of guests.
+    \item[\bulletpoint] Part-time 2018 to 2025: Independently organised French Horn, Piano, and Music Theory tuition to school students, planning weekly structured lessons.
+    \item[\bulletpoint] Part-time 2021 to 2022: Voluntary website maintenance for Bury Lake Young Mariners Sailing School, working with HTML, CSS, Javascript, and PHP.
+    \item[\bulletpoint] Part-time 2021 to present: Voluntary sailing tuition, safety responsibilities, and charity organisation at Bury Lake Young Mariners Sailing School, planning structured sessions, as part of a small team, for youth and adult groups.
+    \item[\bulletpoint] Part-time 2026: \textcolor{red}{put here afterparty work for dad.}
+\end{itemize}
+\sepspace
+
+\NewPart{Education}
+\begin{itemize}
+    \item[\bulletpoint] \textbf{School:} St Clement Danes School \& Sixth Form, GCSEs in various areas (9999999988), A Levels in Mathematics, Further Mathematics, Computer Science, and Music (A*A*A*A*).
+    \item[\bulletpoint] \textbf{University:} University of Manchester, BSc in Computer Science (First-Class expected). 
+\end{itemize}
+\sepspace
+
+\NewPart{Skills}
+\begin{itemize}
+    \item[\bulletpoint]\textcolor{red}{perhaps languages/technical knowledge?}
+    \item[\bulletpoint] I trained in Machine Learning through a Cambridge University course, after which I developed a logistic regression AI model to identify offside offences in professional football.
+    \item[\bulletpoint] I composed and organised the performance of a 300-person ensemble piece of music, performed in Central London to an additional 300 people. I have also created and led rehearsals for brass bands and barbershop choirs, arranging music and structuring rehearsals.
+    \item[\bulletpoint] \textcolor{red}{put here committee roles}
+    \item[\bulletpoint] During the production of a student film titled 'The People You Meet At The Dentist', I was the lead sound designer and producer, as well as writing and organising the recording for the original score to accompany the film.
+    
+\end{itemize}
+\sepspace
+
+\NewPart{Certifications \& Qualifications}
+\begin{itemize}
+    \item[\bulletpoint] ABRSM Grade 8 Practical Exam in French Horn (Distinction) 
+    \item[\bulletpoint] Gold Duke of Edinburgh’s Award
+    \item[\bulletpoint] RYA Senior Instructor Certification
+\end{itemize}
+
+\end{document}
