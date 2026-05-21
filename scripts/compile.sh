@@ -1,0 +1,1 @@
+pdflatex --output-directory=/CV-Updater tex/cv.tex;
